@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shikimori to AniList</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- Minified version -->
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+
+    <!-- Un-Minified version -->
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+
+    <script src="main.js"></script>
+    <script src="vkbeautify.0.99.00.beta.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2 class="title">Shikimori to AniList</h2>
+    <p>Shikimori to AniList позволяет преобразовать список экспортированный c Shikimori в список подходящий для AniList. Загрузите XML-файл или вставьте XML-код в текстовое поле, нажмите преобразовать и сохраните обновленный файл.</p>
+    <!-- <div id="file-upload" class="file-upload">
+        <label for="input">Загрузка файла</label> -->
+        <input id="file-input" class="file-input" type="file">
+    <!-- </div> -->
+
+    <!-- <div id="dropzone" class="dropzone">
+        <p>Нажмите, чтобы выбрать или перетащите файл</p>
+        <input id="input" class="input" type="file">
+    </div> -->
+    <textarea placeholder="Введите текст..." id="textarea" class="textarea" rows="15"></textarea>
+    <button id="convert-btn" class="convert-btn">Преобразовать</button>
+    <!-- <div id="buttons-grid" class="buttons-grid">
+        <button id="copy">Скопировать в буфер обмена</button>
+        <button id="save">Сохранить в файл</button>
+    </div> -->
+    <button id="save" class="save">Сохранить файл</button>
+    <footer>Shikimori to AniList</footer>
+</body>
+</html>

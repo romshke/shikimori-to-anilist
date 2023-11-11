@@ -1,0 +1,85 @@
+.title {
+    text-align: center;
+    margin: 2rem 0 1.5rem;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+.textarea {
+    /* height: 50vh; */
+    resize: vertical;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+input.file-input {
+    width: -webkit-fill-available;
+    border: 1px solid var(--border);
+    padding: 0;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+input.file-input[type=file]::file-selector-button {
+    margin-right: 1rem;
+    border: none;
+    color: var(--bg);
+    background: var(--accent);
+    padding: 0.8rem 0.5rem;
+    transition: background .2s ease-in-out;
+}
+
+input.file-input[type=file]::file-selector-button:hover {
+    background: var(--marked);
+}
+
+button {
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+
+.save {
+    display: none;
+}
+
+body footer {
+    margin: 0;
+    padding: 1.5rem 0 2rem;
+    border: none;
+}
+
+/* .file-upload {
+    display: grid;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+} */
+
+/* .dragenter {
+    background: var(--marked);
+} */
+
+/* .dropzone {
+    height: 8rem;
+    border: 1px dashed;
+    border-radius: var(--standard-border-radius);
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.dropzone p {
+    margin: 0;
+    text-align: center;
+} */
+
+/* .buttons-grid {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+} */
