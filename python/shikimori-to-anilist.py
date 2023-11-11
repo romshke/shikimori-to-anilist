@@ -1,7 +1,7 @@
 import xml.etree.cElementTree as ET
 import os
 
-
+print('Укажите путь к файлу, например C:\\Users\\User\\Downloads\\List.xml')
 file_path = input()
 tree = ET.parse(file_path)
 root = tree.getroot()
@@ -28,4 +28,4 @@ match root[1].tag:
     case 'manga': set_dates(root.findall('manga')), change_tag(root.findall('manga/my_times_watched'))
 
 
-tree.write(f'updated_{os.path.basename(file_path)}', encoding="utf-8",)
+tree.write(os.path.join(os.path.dirname(file_path) ,os.path.basename(file_path).replace('.xml', '_updated.xml')), encoding="utf-8",)
